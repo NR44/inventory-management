@@ -11,7 +11,6 @@ public class Inventory {
     Scanner scanner = new Scanner(System.in);
 
     public void addItem(int id) {
-        scanner.reset();
         Item theItem = new Item();
         System.out.println("Please enter the new Item's Name: ");
         theItem.setName(scanner.nextLine());

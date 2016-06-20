@@ -7,9 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
         int id = 0;
-        int choice = 0;
+        boolean stay = true;
         Inventory theInventory = new Inventory();
-
         do {
             switch (theInventory.menuOptions()) {
                 case 1:
@@ -50,12 +49,12 @@ public class Main {
                     }
                     break;
                 case 6:
-                    choice = 6;
+                    stay = false;
                     System.out.println("You've opted to quit.");
                     break;
 
             }
-        } while (choice != 6);
+        } while (stay == true);
         System.out.println("Thank you for using my inventory system!");
     }
 }
