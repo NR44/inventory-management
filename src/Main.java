@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int id = 0;
+        int id = 0; //You can make an argument to track this with the Inventory object.
         boolean stay = true;
         Inventory theInventory = new Inventory();
         do {
